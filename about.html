@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>my-pages</title>
+    <link href="layui/css/layui.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+</head>
+<body>
+<script src="layui/layui.js"></script>
+<script>
+    layui.use('element', function () {
+        var element = layui.element; //导航的hover效果、二级菜单等功能，需要依赖element模块
+    });
+</script>
+<div class="nav">
+    <ul class="layui-nav layui-bg-cyan">
+        <li class="layui-nav-item"><a class="layui-font-20" href="index.html">首页</a></li>
+        <li class="layui-nav-item"><a class="layui-font-20" href="archives.html">文章归档</a></li>
+        <li class="layui-nav-item"><a class="layui-font-20" href="picture.html">图片</a></li>
+        <li class="layui-nav-item layui-this"><a class="layui-font-20" href="about.html">关于页面</a></li>
+    </ul>
+</div>
+<div class="top-4">
+    <div class="top-mask">
+        <h2 class="layui-font-gray top-h2">关于页面</h2>
+    </div>
+</div>
+<div class="layui-main layui-bg-gray" style="margin-top: 20px;padding-top: 10px">
+    <article class="prose lg:prose-xl" style="margin: 0 auto">
+        <fieldset class="layui-elem-field layui-field-title" style="margin-top: 50px;">
+            <legend>关于页面</legend>
+        </fieldset>
+        <p class="layui-font-18">本网站是网页设计课程的期末作品，虽然网站写的不怎么好看，但是也花费了不少心血</p>
+        <fieldset class="layui-elem-field layui-field-title" style="margin-top: 50px;">
+            <legend>关于我</legend>
+        </fieldset>
+        <p class="layui-font-18">本人是一名大二的计算机专业学生，曾荣获：挂科小能手，编程小菜鸡等称号</p>
+    </article>
+</div>
+</body>
+</html>

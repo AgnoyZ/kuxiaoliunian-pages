@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>my-pages</title>
+    <link href="layui/css/layui.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<script src="layui/layui.js"></script>
+<script>
+    layui.use('element', function () {
+        var element = layui.element; //导航的hover效果、二级菜单等功能，需要依赖element模块
+    });
+</script>
+<div class="nav">
+    <ul class="layui-nav layui-bg-cyan">
+        <li class="layui-nav-item layui-this"><a class="layui-font-20" href="index.html">首页</a></li>
+        <li class="layui-nav-item"><a class="layui-font-20" href="archives.html">文章归档</a></li>
+        <li class="layui-nav-item"><a class="layui-font-20" href="picture.html">相册</a></li>
+        <li class="layui-nav-item"><a class="layui-font-20" href="about.html">关于页面</a></li>
+    </ul>
+</div>
+<div class="top-1">
+    <div class="top-mask">
+        <h2 class="layui-font-gray top-h2">相思了无益，悔当初相见。</h2>
+    </div>
+</div>
+<div class="layui-main layui-bg-gray">
+    <fieldset class="layui-elem-field layui-field-title" style="margin-top: 50px;">
+        <legend>热门文章</legend>
+    </fieldset>
+    <div class="archive-area layui-bg-cyan">
+        <div class="area-left">
+            <img src="img/946b2751567346a0b0302ecd3e84b3eb.png" alt="">
+        </div>
+        <div class="area-right">
+            <a href="text1.html">
+                <h2>初识Python</h2>
+            </a>
+            <br>
+            <p>1989年圣诞节：Guido von Rossum开始写Python语言的编译器。</p>
+            <p>1991年2月：第一个Python编译器（同时也是解释器）诞生，它是用C语言实现的（后面），可以调用C语言的库函数</p>
+        </div>
+    </div>
+    <div class="archive-area layui-bg-cyan">
+        <div class="area-left">
+            <img src="img/946b2751567346a0b0302ecd3e84b3eb.png" alt="">
+        </div>
+        <div class="area-right">
+            <a href="text3.html">
+                <h2>分支结构</h2>
+            </a>
+            <br>
+            <p>迄今为止，我们写的Python代码都是一条一条语句顺序执行，这种代码结构通常称之为顺序结构。</p>
+            <p>在Python中，要构造分支结构可以使用`if`、`elif`和`else`关键字。</p>
+        </div>
+    </div>
+    <fieldset class="layui-elem-field layui-field-title" style="margin-top: 50px;">
+        <legend>最新文章</legend>
+    </fieldset>
+    <div class="archive-area layui-bg-cyan">
+        <div class="area-left">
+            <img src="img/946b2751567346a0b0302ecd3e84b3eb.png" alt="">
+        </div>
+        <div class="area-right">
+            <a href="text4.html">
+                <h2>循环结构</h2>
+            </a>
+            <br>
+            <p>我们在写程序的时候，一定会遇到需要重复执行某条或某些指令的场景。</p>
+            <p>如果明确的知道循环执行的次数或者要对一个容器进行迭代（后面会讲到），那么我们推荐使用`for-in`循环</p>
+        </div>
+    </div>
+    <div class="archive-area layui-bg-cyan">
+        <div class="area-left">
+            <img src="img/946b2751567346a0b0302ecd3e84b3eb.png" alt="">
+        </div>
+        <div class="area-right">
+            <a href="text1.html">
+                <h2>初识Python</h2>
+            </a>
+            <br>
+            <p>1989年圣诞节：Guido von Rossum开始写Python语言的编译器。</p>
+            <p>1991年2月：第一个Python编译器（同时也是解释器）诞生，它是用C语言实现的（后面），可以调用C语言的库函数</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>my-pages</title>
+    <link href="layui/css/layui.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<script src="layui/layui.js"></script>
+<script>
+    layui.use('element', function () {
+        var element = layui.element; //导航的hover效果、二级菜单等功能，需要依赖element模块
+    });
+</script>
+<div class="nav">
+    <ul class="layui-nav layui-bg-cyan">
+        <li class="layui-nav-item"><a class="layui-font-20" href="index.html">首页</a></li>
+        <li class="layui-nav-item layui-this"><a class="layui-font-20" href="archives.html">文章归档</a></li>
+        <li class="layui-nav-item"><a class="layui-font-20" href="picture.html">图片</a></li>
+        <li class="layui-nav-item"><a class="layui-font-20" href="about.html">关于页面</a></li>
+    </ul>
+</div>
+<div class="top-2">
+    <div class="top-mask">
+        <h2 class="layui-font-gray top-h2">文章归档</h2>
+    </div>
+</div>
+<div class="center-box">
+    <fieldset class="layui-elem-field layui-field-title" >
+        <legend>时间线</legend>
+    </fieldset>
+    <ul class="layui-timeline">
+        <li class="layui-timeline-item">
+            <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+            <div class="layui-timeline-content layui-text">
+                <h3 class="layui-timeline-title">8月18日</h3>
+                <p>
+                    Python程序接入MySQL数据库
+                </p>
+            </div>
+        </li>
+        <li class="layui-timeline-item">
+            <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+            <div class="layui-timeline-content layui-text">
+                <h3 class="layui-timeline-title">8月16日</h3>
+                <p>深入MySQL</p>
+            </div>
+        </li>
+        <li class="layui-timeline-item">
+            <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+            <div class="layui-timeline-content layui-text">
+                <h3 class="layui-timeline-title">8月15日</h3>
+                <p>
+                    SQL详解
+                </p>
+            </div>
+        </li>
+        <li class="layui-timeline-item">
+            <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+            <div class="layui-timeline-content layui-text">
+                <h3 class="layui-timeline-title">8月14日</h3>
+                <p>关系型数据库和MySQL概述</p>
+            </div>
+        </li>
+        <li class="layui-timeline-item">
+            <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+            <div class="layui-timeline-content layui-text">
+                <h3 class="layui-timeline-title">8月13日</h3>
+                <p>Python中的并发编程</p>
+            </div>
+        </li>
+        <li class="layui-timeline-item">
+            <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+            <div class="layui-timeline-content layui-text">
+                <h3 class="layui-timeline-title">8月12日</h3>
+                <p>文件读写和异常处理</p>
+            </div>
+        </li>
+        <li class="layui-timeline-item">
+            <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+            <div class="layui-timeline-content layui-text">
+                <h3 class="layui-timeline-title">8月12日</h3>
+                <p>函数和模块</p>
+            </div>
+        </li>
+    </ul>
+</div>
+</body>
+</html>
